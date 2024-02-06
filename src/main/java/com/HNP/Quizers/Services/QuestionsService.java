@@ -79,7 +79,7 @@ public class QuestionsService {
         if(ans>0) {
             return new ResponseEntity<>("Deleted", HttpStatus.OK);
         }
-            return new ResponseEntity<>("Not Deleted", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Not Deleted : Error :(", HttpStatus.BAD_REQUEST);
         }
 
         @Transactional
